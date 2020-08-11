@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="hoadonbanhangview1">
+    <Key>
+      <PropertyRef Name="mahd" />
+      <PropertyRef Name="manv" />
+      <PropertyRef Name="tenkh" />
+      <PropertyRef Name="sdt" />
+      <PropertyRef Name="madh" />
+      <PropertyRef Name="tendh" />
+      <PropertyRef Name="giaban" />
+      <PropertyRef Name="soluong" />
+      <PropertyRef Name="tongtien" />
+    </Key>
+    <Property Name="mahd" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="manv" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="tenkh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sdt" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="madh" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="tendh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="giaban" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="soluong" Type="Int32" Nullable="false" />
+    <Property Name="tongtien" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1Entities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="hoadonbanhangview1" EntityType="Self.hoadonbanhangview1" />
+  </EntityContainer>
+</Schema>

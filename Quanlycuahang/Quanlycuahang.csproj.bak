@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAD3F651-E973-44EC-AF94-AC6828B38339}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quanlycuahang</RootNamespace>
+    <AssemblyName>Quanlycuahang</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\CTHoadonDAO.cs" />
+    <Compile Include="DAO\CTHoadonnhaphangDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DonghoDAO.cs" />
+    <Compile Include="DAO\HoadonDAO.cs" />
+    <Compile Include="DAO\HoadonnhaphangDAO.cs" />
+    <Compile Include="DAO\KhachhangDAO.cs" />
+    <Compile Include="DAO\MaHoa.cs" />
+    <Compile Include="DAO\MenuDAO.cs" />
+    <Compile Include="DAO\MenunhaphangDAO.cs" />
+    <Compile Include="DAO\nhacungcapDAO.cs" />
+    <Compile Include="DAO\NhanvienDAO.cs" />
+    <Compile Include="DTO\CTHoadon.cs" />
+    <Compile Include="DTO\CTHoadonnhaphang.cs" />
+    <Compile Include="DTO\Dongho.cs" />
+    <Compile Include="DTO\Hoadon.cs" />
+    <Compile Include="DTO\Hoadonnhaphang.cs" />
+    <Compile Include="DTO\Khachhang.cs" />
+    <Compile Include="DTO\Menu.cs" />
+    <Compile Include="DTO\Menunhaphang.cs" />
+    <Compile Include="DTO\nhacungcap.cs" />
+    <Compile Include="DTO\Nhanvien.cs" />
+    <Compile Include="F_Chitietgiaodich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Chitietgiaodich.Designer.cs">
+      <DependentUpon>F_Chitietgiaodich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Chitietgiaodichncc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Chitietgiaodichncc.Designer.cs">
+      <DependentUpon>F_Chitietgiaodichncc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Doimatkhau.Designer.cs">
+      <DependentUpon>F_Doimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Donhangmoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Donhangmoi.Designer.cs">
+      <DependentUpon>F_Donhangmoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_LichSuGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LichSuGiaoDich.Designer.cs">
+      <DependentUpon>F_LichSuGiaoDich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_LichSuGiaoDichNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LichSuGiaoDichNCC.Designer.cs">
+      <DependentUpon>F_LichSuGiaoDichNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Manager.Designer.cs">
+      <DependentUpon>F_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Quanlydongho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Quanlydongho.Designer.cs">
+      <DependentUpon>F_Quanlydongho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Quanlyhoadonbanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Quanlyhoadonbanhang.Designer.cs">
+      <DependentUpon>F_Quanlyhoadonbanhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Quanlyhoadonnhaphang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Quanlyhoadonnhaphang.Designer.cs">
+      <DependentUpon>F_Quanlyhoadonnhaphang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Quanlykhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Quanlykhachhang.Designer.cs">
+      <DependentUpon>F_Quanlykhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Quanlynhacungcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Quanlynhacungcap.Designer.cs">
+      <DependentUpon>F_Quanlynhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Quanlynhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Quanlynhanvien.Designer.cs">
+      <DependentUpon>F_Quanlynhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Sanphamsaphethang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Sanphamsaphethang.Designer.cs">
+      <DependentUpon>F_Sanphamsaphethang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Thongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Thongke.Designer.cs">
+      <DependentUpon>F_Thongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Thongtintaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Thongtintaikhoan.Designer.cs">
+      <DependentUpon>F_Thongtintaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBaoCaoHoaDonNhapHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBaoCaoHoaDonNhapHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBaoCaoHoaDonNhapHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHoaDonBanHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHoaDonBanHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHoaDonBanHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHoaDonBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHoaDonBanHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHoaDonBanHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHoaDonNhapHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHoaDonNhapHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHoaDonNhapHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHoaDonNhapHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHoaDonNhapHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHoaDonNhapHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelInBaoCaoHoaDonBanHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelInBaoCaoHoaDonBanHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelInBaoCaoHoaDonBanHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportBaoCaoThongKeBanHang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportBaoCaoThongKeBanHang.Designer.cs">
+      <DependentUpon>ReportBaoCaoThongKeBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBaoCaoThongKeNhapHanh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportBaoCaoThongKeNhapHanh.Designer.cs">
+      <DependentUpon>ReportBaoCaoThongKeNhapHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHoaDonBanHang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportHoaDonBanHang.Designer.cs">
+      <DependentUpon>ReportHoaDonBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHoaDonNhapHang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportHoaDonNhapHang.Designer.cs">
+      <DependentUpon>ReportHoaDonNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongkehoadonbanhang.cs">
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="thongkehoadonnhaphang.cs">
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="viewhoadonbanhang.cs">
+      <DependentUpon>ModelHoaDonBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="viewhoadonnhaphang.cs">
+      <DependentUpon>ModelHoaDonNhapHang.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="F_Chitietgiaodich.resx">
+      <DependentUpon>F_Chitietgiaodich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Chitietgiaodichncc.resx">
+      <DependentUpon>F_Chitietgiaodichncc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Doimatkhau.resx">
+      <DependentUpon>F_Doimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Donhangmoi.resx">
+      <DependentUpon>F_Donhangmoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LichSuGiaoDich.resx">
+      <DependentUpon>F_LichSuGiaoDich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LichSuGiaoDichNCC.resx">
+      <DependentUpon>F_LichSuGiaoDichNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Manager.resx">
+      <DependentUpon>F_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Quanlydongho.resx">
+      <DependentUpon>F_Quanlydongho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Quanlyhoadonbanhang.resx">
+      <DependentUpon>F_Quanlyhoadonbanhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Quanlyhoadonnhaphang.resx">
+      <DependentUpon>F_Quanlyhoadonnhaphang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Quanlykhachhang.resx">
+      <DependentUpon>F_Quanlykhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Quanlynhacungcap.resx">
+      <DependentUpon>F_Quanlynhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Quanlynhanvien.resx">
+      <DependentUpon>F_Quanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Sanphamsaphethang.resx">
+      <DependentUpon>F_Sanphamsaphethang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Thongke.resx">
+      <DependentUpon>F_Thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Thongtintaikhoan.resx">
+      <DependentUpon>F_Thongtintaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportBaoCaoThongKeBanHang.resx">
+      <DependentUpon>ReportBaoCaoThongKeBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBaoCaoThongKeNhapHanh.resx">
+      <DependentUpon>ReportBaoCaoThongKeNhapHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportHoaDonBanHang.resx">
+      <DependentUpon>ReportHoaDonBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportHoaDonNhapHang.resx">
+      <DependentUpon>ReportHoaDonNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="ModelHoaDonBanHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelHoaDonBanHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ModelBaoCaoHoaDonNhapHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelBaoCaoHoaDonNhapHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelBaoCaoHoaDonNhapHang.edmx.diagram">
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.edmx</DependentUpon>
+    </None>
+    <None Include="ModelHoaDonBanHang.edmx.diagram">
+      <DependentUpon>ModelHoaDonBanHang.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelHoaDonNhapHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelHoaDonNhapHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelHoaDonNhapHang.edmx.diagram">
+      <DependentUpon>ModelHoaDonNhapHang.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelInBaoCaoHoaDonBanHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelInBaoCaoHoaDonBanHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelInBaoCaoHoaDonBanHang.edmx.diagram">
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1-1461343345675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelBaoCaoHoaDonNhapHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.edmx</DependentUpon>
+      <LastGenOutput>ModelBaoCaoHoaDonNhapHang.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelBaoCaoHoaDonNhapHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelBaoCaoHoaDonNhapHang.edmx</DependentUpon>
+      <LastGenOutput>ModelBaoCaoHoaDonNhapHang.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelHoaDonBanHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHoaDonBanHang.edmx</DependentUpon>
+      <LastGenOutput>ModelHoaDonBanHang.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelHoaDonBanHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHoaDonBanHang.edmx</DependentUpon>
+      <LastGenOutput>ModelHoaDonBanHang.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelHoaDonNhapHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHoaDonNhapHang.edmx</DependentUpon>
+      <LastGenOutput>ModelHoaDonNhapHang.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelHoaDonNhapHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHoaDonNhapHang.edmx</DependentUpon>
+      <LastGenOutput>ModelHoaDonNhapHang.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelInBaoCaoHoaDonBanHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.edmx</DependentUpon>
+      <LastGenOutput>ModelInBaoCaoHoaDonBanHang.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelInBaoCaoHoaDonBanHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelInBaoCaoHoaDonBanHang.edmx</DependentUpon>
+      <LastGenOutput>ModelInBaoCaoHoaDonBanHang.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

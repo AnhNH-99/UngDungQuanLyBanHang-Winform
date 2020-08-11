@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quanlyshopdongho1Model1StoreContainer" CdmEntityContainer="quanlyshopdongho1Entities3">
+    <EntitySetMapping Name="hoadonbanhangview1">
+      <EntityTypeMapping TypeName="quanlyshopdongho1Model1.hoadonbanhangview1">
+        <MappingFragment StoreEntitySet="hoadonbanhangview1">
+          <ScalarProperty Name="mahd" ColumnName="mahd" />
+          <ScalarProperty Name="manv" ColumnName="manv" />
+          <ScalarProperty Name="tenkh" ColumnName="tenkh" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="tendh" ColumnName="tendh" />
+          <ScalarProperty Name="giaban" ColumnName="giaban" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

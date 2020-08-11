@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="quanlyshopdongho1Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'quanlyshopdongho1.dbo.viewhoadonnhaphang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewhoadonnhaphang">
+          <Key>
+            <PropertyRef Name="mahd" />
+            <PropertyRef Name="manv" />
+            <PropertyRef Name="tenncc" />
+            <PropertyRef Name="diachi" />
+            <PropertyRef Name="email" />
+            <PropertyRef Name="sdt" />
+            <PropertyRef Name="madh" />
+            <PropertyRef Name="tendh" />
+            <PropertyRef Name="gianhap" />
+            <PropertyRef Name="soluong" />
+            <PropertyRef Name="tongtien" />
+            <PropertyRef Name="ngaylap" />
+          </Key>
+          <Property Name="mahd" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="manv" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="tenncc" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="diachi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="sdt" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="madh" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="tendh" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="gianhap" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="soluong" Type="int" Nullable="false" />
+          <Property Name="thanhtien" Type="decimal" Precision="29" Scale="2" />
+          <Property Name="tongtien" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ngaylap" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="quanlyshopdongho1Model1StoreContainer">
+          <EntitySet Name="viewhoadonnhaphang" EntityType="Self.viewhoadonnhaphang" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [viewhoadonnhaphang].[mahd] AS [mahd], 
+    [viewhoadonnhaphang].[manv] AS [manv], 
+    [viewhoadonnhaphang].[tenncc] AS [tenncc], 
+    [viewhoadonnhaphang].[diachi] AS [diachi], 
+    [viewhoadonnhaphang].[email] AS [email], 
+    [viewhoadonnhaphang].[sdt] AS [sdt], 
+    [viewhoadonnhaphang].[madh] AS [madh], 
+    [viewhoadonnhaphang].[tendh] AS [tendh], 
+    [viewhoadonnhaphang].[gianhap] AS [gianhap], 
+    [viewhoadonnhaphang].[soluong] AS [soluong], 
+    [viewhoadonnhaphang].[thanhtien] AS [thanhtien], 
+    [viewhoadonnhaphang].[tongtien] AS [tongtien], 
+    [viewhoadonnhaphang].[ngaylap] AS [ngaylap]
+    FROM [dbo].[viewhoadonnhaphang] AS [viewhoadonnhaphang]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="quanlyshopdongho1Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="viewhoadonnhaphang">
+          <Key>
+            <PropertyRef Name="mahd" />
+            <PropertyRef Name="manv" />
+            <PropertyRef Name="tenncc" />
+            <PropertyRef Name="diachi" />
+            <PropertyRef Name="email" />
+            <PropertyRef Name="sdt" />
+            <PropertyRef Name="madh" />
+            <PropertyRef Name="tendh" />
+            <PropertyRef Name="gianhap" />
+            <PropertyRef Name="soluong" />
+            <PropertyRef Name="tongtien" />
+            <PropertyRef Name="ngaylap" />
+          </Key>
+          <Property Name="mahd" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="manv" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="tenncc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="diachi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sdt" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="madh" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="tendh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="gianhap" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="soluong" Type="Int32" Nullable="false" />
+          <Property Name="thanhtien" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="tongtien" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ngaylap" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="quanlyshopdongho1Entities5" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="viewhoadonnhaphangs" EntityType="Self.viewhoadonnhaphang" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="quanlyshopdongho1Model1StoreContainer" CdmEntityContainer="quanlyshopdongho1Entities5">
+          <EntitySetMapping Name="viewhoadonnhaphangs">
+            <EntityTypeMapping TypeName="quanlyshopdongho1Model1.viewhoadonnhaphang">
+              <MappingFragment StoreEntitySet="viewhoadonnhaphang">
+                <ScalarProperty Name="mahd" ColumnName="mahd" />
+                <ScalarProperty Name="manv" ColumnName="manv" />
+                <ScalarProperty Name="tenncc" ColumnName="tenncc" />
+                <ScalarProperty Name="diachi" ColumnName="diachi" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="sdt" ColumnName="sdt" />
+                <ScalarProperty Name="madh" ColumnName="madh" />
+                <ScalarProperty Name="tendh" ColumnName="tendh" />
+                <ScalarProperty Name="gianhap" ColumnName="gianhap" />
+                <ScalarProperty Name="soluong" ColumnName="soluong" />
+                <ScalarProperty Name="thanhtien" ColumnName="thanhtien" />
+                <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+                <ScalarProperty Name="ngaylap" ColumnName="ngaylap" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

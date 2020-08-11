@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'quanlyshopdongho1.dbo.hoadonbanhangview1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="hoadonbanhangview1">
+    <Key>
+      <PropertyRef Name="mahd" />
+      <PropertyRef Name="manv" />
+      <PropertyRef Name="tenkh" />
+      <PropertyRef Name="sdt" />
+      <PropertyRef Name="madh" />
+      <PropertyRef Name="tendh" />
+      <PropertyRef Name="giaban" />
+      <PropertyRef Name="soluong" />
+      <PropertyRef Name="tongtien" />
+    </Key>
+    <Property Name="mahd" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="manv" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="tenkh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="sdt" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="madh" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="tendh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="giaban" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="soluong" Type="int" Nullable="false" />
+    <Property Name="tongtien" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1Model1StoreContainer">
+    <EntitySet Name="hoadonbanhangview1" EntityType="Self.hoadonbanhangview1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [hoadonbanhangview1].[mahd] AS [mahd], 
+    [hoadonbanhangview1].[manv] AS [manv], 
+    [hoadonbanhangview1].[tenkh] AS [tenkh], 
+    [hoadonbanhangview1].[sdt] AS [sdt], 
+    [hoadonbanhangview1].[madh] AS [madh], 
+    [hoadonbanhangview1].[tendh] AS [tendh], 
+    [hoadonbanhangview1].[giaban] AS [giaban], 
+    [hoadonbanhangview1].[soluong] AS [soluong], 
+    [hoadonbanhangview1].[tongtien] AS [tongtien]
+    FROM [dbo].[hoadonbanhangview1] AS [hoadonbanhangview1]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

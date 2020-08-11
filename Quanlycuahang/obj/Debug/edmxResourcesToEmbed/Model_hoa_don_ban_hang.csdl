@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="hoadonbanhangview">
+    <Key>
+      <PropertyRef Name="Mã_hóa_đơn" />
+      <PropertyRef Name="Mã_nhân_viên" />
+      <PropertyRef Name="Khách_hàng" />
+      <PropertyRef Name="Số_điện_thoại" />
+      <PropertyRef Name="Đồng_hồ" />
+      <PropertyRef Name="Mặt_hàng" />
+      <PropertyRef Name="Giá_bán" />
+      <PropertyRef Name="Số_lượng" />
+      <PropertyRef Name="Tổng_tiền" />
+    </Key>
+    <Property Name="Mã_hóa_đơn" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Mã_nhân_viên" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Khách_hàng" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Số_điện_thoại" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Đồng_hồ" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Mặt_hàng" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Giá_bán" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Số_lượng" Type="Int32" Nullable="false" />
+    <Property Name="Thành_tiền" Type="Decimal" Precision="29" Scale="2" />
+    <Property Name="Tổng_tiền" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="hoadonbanhangviews" EntityType="Self.hoadonbanhangview" />
+  </EntityContainer>
+</Schema>

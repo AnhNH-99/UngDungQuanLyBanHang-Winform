@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quanlyshopdongho1Model1StoreContainer" CdmEntityContainer="quanlyshopdongho1Entities5">
+    <EntitySetMapping Name="viewhoadonnhaphangs">
+      <EntityTypeMapping TypeName="quanlyshopdongho1Model1.viewhoadonnhaphang">
+        <MappingFragment StoreEntitySet="viewhoadonnhaphang">
+          <ScalarProperty Name="mahd" ColumnName="mahd" />
+          <ScalarProperty Name="manv" ColumnName="manv" />
+          <ScalarProperty Name="tenncc" ColumnName="tenncc" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="madh" ColumnName="madh" />
+          <ScalarProperty Name="tendh" ColumnName="tendh" />
+          <ScalarProperty Name="gianhap" ColumnName="gianhap" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="thanhtien" ColumnName="thanhtien" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+          <ScalarProperty Name="ngaylap" ColumnName="ngaylap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

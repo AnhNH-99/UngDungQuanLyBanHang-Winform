@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'quanlyshopdongho1.dbo.hoadonbanhangview' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="hoadonbanhangview">
+    <Key>
+      <PropertyRef Name="Mã hóa đơn" />
+      <PropertyRef Name="Mã nhân viên" />
+      <PropertyRef Name="Khách hàng" />
+      <PropertyRef Name="Số điện thoại" />
+      <PropertyRef Name="Đồng hồ" />
+      <PropertyRef Name="Mặt hàng" />
+      <PropertyRef Name="Giá bán" />
+      <PropertyRef Name="Số lượng" />
+      <PropertyRef Name="Tổng tiền" />
+    </Key>
+    <Property Name="Mã hóa đơn" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Mã nhân viên" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Khách hàng" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Số điện thoại" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="Đồng hồ" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Mặt hàng" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Giá bán" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Số lượng" Type="int" Nullable="false" />
+    <Property Name="Thành tiền" Type="decimal" Precision="29" Scale="2" />
+    <Property Name="Tổng tiền" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1ModelStoreContainer">
+    <EntitySet Name="hoadonbanhangview" EntityType="Self.hoadonbanhangview" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [hoadonbanhangview].[Mã hóa đơn] AS [Mã hóa đơn], 
+    [hoadonbanhangview].[Mã nhân viên] AS [Mã nhân viên], 
+    [hoadonbanhangview].[Khách hàng] AS [Khách hàng], 
+    [hoadonbanhangview].[Số điện thoại] AS [Số điện thoại], 
+    [hoadonbanhangview].[Đồng hồ] AS [Đồng hồ], 
+    [hoadonbanhangview].[Mặt hàng] AS [Mặt hàng], 
+    [hoadonbanhangview].[Giá bán] AS [Giá bán], 
+    [hoadonbanhangview].[Số lượng] AS [Số lượng], 
+    [hoadonbanhangview].[Thành tiền] AS [Thành tiền], 
+    [hoadonbanhangview].[Tổng tiền] AS [Tổng tiền]
+    FROM [dbo].[hoadonbanhangview] AS [hoadonbanhangview]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'quanlyshopdongho1.dbo.thongkehoadonbanhang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="thongkehoadonbanhang">
+    <Key>
+      <PropertyRef Name="mahd" />
+      <PropertyRef Name="manv" />
+      <PropertyRef Name="makh" />
+      <PropertyRef Name="ngaylap" />
+      <PropertyRef Name="tongtien" />
+    </Key>
+    <Property Name="mahd" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="manv" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="makh" Type="int" Nullable="false" />
+    <Property Name="ngaylap" Type="date" Nullable="false" />
+    <Property Name="tongtien" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1Model2StoreContainer">
+    <EntitySet Name="thongkehoadonbanhang" EntityType="Self.thongkehoadonbanhang" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [thongkehoadonbanhang].[mahd] AS [mahd], 
+    [thongkehoadonbanhang].[manv] AS [manv], 
+    [thongkehoadonbanhang].[makh] AS [makh], 
+    [thongkehoadonbanhang].[ngaylap] AS [ngaylap], 
+    [thongkehoadonbanhang].[tongtien] AS [tongtien]
+    FROM [dbo].[thongkehoadonbanhang] AS [thongkehoadonbanhang]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

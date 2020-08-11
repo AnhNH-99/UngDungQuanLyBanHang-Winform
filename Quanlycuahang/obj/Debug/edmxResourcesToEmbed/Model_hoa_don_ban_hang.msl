@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quanlyshopdongho1ModelStoreContainer" CdmEntityContainer="quanlyshopdongho1Entities">
+    <EntitySetMapping Name="hoadonbanhangviews">
+      <EntityTypeMapping TypeName="quanlyshopdongho1Model.hoadonbanhangview">
+        <MappingFragment StoreEntitySet="hoadonbanhangview">
+          <ScalarProperty Name="Mã_hóa_đơn" ColumnName="Mã hóa đơn" />
+          <ScalarProperty Name="Mã_nhân_viên" ColumnName="Mã nhân viên" />
+          <ScalarProperty Name="Khách_hàng" ColumnName="Khách hàng" />
+          <ScalarProperty Name="Số_điện_thoại" ColumnName="Số điện thoại" />
+          <ScalarProperty Name="Đồng_hồ" ColumnName="Đồng hồ" />
+          <ScalarProperty Name="Mặt_hàng" ColumnName="Mặt hàng" />
+          <ScalarProperty Name="Giá_bán" ColumnName="Giá bán" />
+          <ScalarProperty Name="Số_lượng" ColumnName="Số lượng" />
+          <ScalarProperty Name="Thành_tiền" ColumnName="Thành tiền" />
+          <ScalarProperty Name="Tổng_tiền" ColumnName="Tổng tiền" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

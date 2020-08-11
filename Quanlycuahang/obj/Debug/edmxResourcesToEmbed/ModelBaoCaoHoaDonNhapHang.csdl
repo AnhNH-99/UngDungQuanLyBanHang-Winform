@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="thongkehoadonnhaphang">
+    <Key>
+      <PropertyRef Name="mahd" />
+      <PropertyRef Name="manv" />
+      <PropertyRef Name="mancc" />
+      <PropertyRef Name="ngaylap" />
+      <PropertyRef Name="tongtien" />
+    </Key>
+    <Property Name="mahd" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="manv" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mancc" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ngaylap" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="tongtien" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1Entities8" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="thongkehoadonnhaphangs" EntityType="Self.thongkehoadonnhaphang" />
+  </EntityContainer>
+</Schema>

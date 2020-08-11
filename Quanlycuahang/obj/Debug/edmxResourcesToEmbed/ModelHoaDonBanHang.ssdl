@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlyshopdongho1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'quanlyshopdongho1.dbo.viewhoadonbanhang' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewhoadonbanhang">
+    <Key>
+      <PropertyRef Name="mahd" />
+      <PropertyRef Name="manv" />
+      <PropertyRef Name="tenkh" />
+      <PropertyRef Name="sdt" />
+      <PropertyRef Name="madh" />
+      <PropertyRef Name="tendh" />
+      <PropertyRef Name="giaban" />
+      <PropertyRef Name="soluong" />
+      <PropertyRef Name="tongtien" />
+      <PropertyRef Name="ngaylap" />
+    </Key>
+    <Property Name="mahd" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="manv" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="tenkh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="sdt" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="madh" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="tendh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="giaban" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="soluong" Type="int" Nullable="false" />
+    <Property Name="thanhtien" Type="decimal" Precision="29" Scale="2" />
+    <Property Name="tongtien" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ngaylap" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="quanlyshopdongho1ModelStoreContainer">
+    <EntitySet Name="viewhoadonbanhang" EntityType="Self.viewhoadonbanhang" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viewhoadonbanhang].[mahd] AS [mahd], 
+    [viewhoadonbanhang].[manv] AS [manv], 
+    [viewhoadonbanhang].[tenkh] AS [tenkh], 
+    [viewhoadonbanhang].[sdt] AS [sdt], 
+    [viewhoadonbanhang].[madh] AS [madh], 
+    [viewhoadonbanhang].[tendh] AS [tendh], 
+    [viewhoadonbanhang].[giaban] AS [giaban], 
+    [viewhoadonbanhang].[soluong] AS [soluong], 
+    [viewhoadonbanhang].[thanhtien] AS [thanhtien], 
+    [viewhoadonbanhang].[tongtien] AS [tongtien], 
+    [viewhoadonbanhang].[ngaylap] AS [ngaylap]
+    FROM [dbo].[viewhoadonbanhang] AS [viewhoadonbanhang]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
